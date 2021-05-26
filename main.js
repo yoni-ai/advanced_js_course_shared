@@ -29,7 +29,6 @@ $(function(){
 
     $("#bootstrap_enter").on({
       click: function(){
-
         $( "#home_content" ).hide( "slow");
         $( "#github_content" ).hide( "slow");
         $( "#node_content" ).hide( "slow");
@@ -40,11 +39,11 @@ $(function(){
 
     $("#node_enter").on({
       click: function(){
-        home_button();
         $( "#github_content" ).hide( "slow");
         $( "#home_content" ).hide( "slow");
         $( "#bootstrap_content" ).hide( "slow");
         $( "#node_content" ).show( "slow");
+        home_button();
  
       }
     });
