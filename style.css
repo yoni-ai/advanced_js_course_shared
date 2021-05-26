@@ -1,0 +1,167 @@
+
+
+
+#panel {
+    background-color: rgb(128, 0, 79);
+    border: 2px solid blue;
+}
+
+
+#panel_head {
+    background-color: mediumaquamarine;
+    width: 100%;
+}
+
+.lessons {
+    padding: 5vmin;
+    margin: 0;
+    font-size: 5vmin;
+} 
+  
+.lessons_menu {
+    width: 100%;
+}
+
+
+
+
+
+/* --------------------------------------------bootstrap version---------------------------------------- */
+/* fonts from goole fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+/*overall document design*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    direction: rtl;
+    font-family: 'Heebo', sans-serif;
+  }
+
+html, body{
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+
+  }
+  
+body { 
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.25rem;
+    line-height: 150%;
+    text-shadow: 0 2px 2px #626262;
+  }
+
+.margin_off {
+    margin: 0px;
+}
+
+.padding_off {
+    padding: 0px;
+}
+
+/*entry screen design*/
+
+/*left entry screen side*/
+#left-half {
+    box-shadow: -10px 7px 37px -7px #000000;
+    height: 100vh;
+    width: 100%;
+}
+
+.cover {
+    background-image: url("/assets/code-img.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-color: #000000;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#logo {
+    background-image: url("/assets/MT_logo.png");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    position: absolute;
+    top: 65%;
+    right: 60%;
+    width: 60vmin;
+    height: 30vmin;
+    z-index: 1001;
+}
+
+/*right entry screen side*/
+#right-half {
+    box-shadow:1px 0px 14px 0px rgba(50, 50, 50, 0.59);
+    height: 100vh;
+    width: 100%;
+}
+
+#box_header {
+    direction: rtl;
+    position: relative;
+    left: 5%;
+    top: 0%;
+    height: 30%;
+    width: 85%;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#header{
+    color: black;
+    font-size: 1.5em;
+}
+
+#box {
+    direction: rtl;
+    position: relative;
+    left: 5%;
+    top: 0%;
+    height: 70%;
+    width: 75%;
+    /* border: 5px solid black; */
+}
+
+.lesson_row{
+    text-align: center;
+    height: 20vh;
+    margin: 5% 0 5% 0;
+    
+}
+
+.main_button {
+    border-radius: 10px;
+    font-size: 1.5em;
+    background-color: white;
+    color: black;
+    
+    
+}
+
+.hover {
+    box-shadow: -10px 7px 37px -7px #000000;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content_design {
+    background-color: rgb(70, 70, 70);
+    margin-bottom: 0;
+}
+
+/*content design*/
+/* .home_button{
+    
+} */
+
