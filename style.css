@@ -165,9 +165,11 @@ body {
     background-color: rgb(73, 73, 73); 
     border: none; /* Remove borders */
     color: white; /* White text */
-    padding: 12px 16px; /* Some padding */
+    padding: o; /* Some padding */
     font-size: 16px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
+    margin-top: 10%;
+    border-radius: 7px 0px 0px 7px;
 
 }
   /* Darker background on mouse-over */
@@ -177,6 +179,6 @@ body {
 
 
 .lesson_choice{
-    color: red;
+    color: rgb(49, 49, 49);
 }
 
