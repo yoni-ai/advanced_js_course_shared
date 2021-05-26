@@ -51,7 +51,7 @@ $(function(){
 
       $('.lesson_choice').on({
         click: function(){
-          $(this).addClass('active');
+          // $(this).addClass('active');
         }
       });
 
