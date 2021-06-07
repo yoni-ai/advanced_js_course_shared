@@ -12,7 +12,12 @@ $(function(){
         $( "#github_content" ).hide( "slow");
         $( "#node_content" ).hide( "slow");
         $( "#home_content" ).show( "slow");
+      },
+
+      mouseover: function(){
+        $(this).toggleClass('col-10');
       }
+      
     }); 
   }
 
