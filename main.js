@@ -5,7 +5,7 @@ $(function(){
     $( "#node_content" ).hide();
 
   function home_button(){
-    var home = $(".home_button");
+    let home = $(".home_button");
     home.on({
       click: function(){
         $( "#bootstrap_content" ).hide( "slow");
@@ -14,12 +14,18 @@ $(function(){
         $( "#home_content" ).show( "slow");
       },
 
-      mouseover: function(){
-        $(this).toggleClass('col-10');
+      mouseenter: function(){
+        $(this).animate({width: "100%"}, 500);
+      },
+
+      mouseleave: function(){
+        $(this).animate({width: "50%"}, 500);
       }
       
     }); 
   }
+
+  
 
 
     $("#github_enter").on({
@@ -59,6 +65,9 @@ $(function(){
         }
       });
 
+      $('.tablinks').click({
+
+      });
 
 
 
