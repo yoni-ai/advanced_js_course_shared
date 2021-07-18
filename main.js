@@ -49,6 +49,9 @@ $(function(){
         $( "#node_content" ).hide( "slow");
         $( "#bootstrap_content" ).show( "slow");
         home_button();
+        $("#bootstrap1_content").show("slow");
+        $("#bootstrap2_content").hide("slow");
+        $("#bootstrap3_content").hide("slow");
       }
     });
 
@@ -98,6 +101,32 @@ $(function(){
         $("#github4_content").show("slow");
       }
     });
+
+    $("#bootstrap_1").on({
+      click: function(){
+        $("#bootstrap1_content").show("slow");
+        $("#bootstrap2_content").hide("slow");
+        $("#bootstrap3_content").hide("slow");
+      }
+    });
+
+    $("#bootstrap_2").on({
+      click: function(){
+        $("#bootstrap1_content").hide("slow");
+        $("#bootstrap2_content").show("slow");
+        $("#bootstrap3_content").hide("slow");
+      }
+    });
+
+    $("#bootstrap_3").on({
+      click: function(){
+        $("#bootstrap1_content").hide("slow");
+        $("#bootstrap2_content").hide("slow");
+        $("#bootstrap3_content").show("slow");
+      }
+    });
+
+
 
       // $('.lesson_choice').on({
       //   click: function(){
