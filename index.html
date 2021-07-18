@@ -60,17 +60,17 @@
                                             <h3 >
                                              בחרו נושא:
                                             </h3>
-                                            <button  class="list-group-item list-group-item-dark lesson_choice btn-dark shadow small-text"> פתיחה </button>
-                                            <button  class="list-group-item list-group-item-dark lesson_choice btn-dark shadow small-text"> יצירת תיקייה חדשה</button>
-                                            <button  class="list-group-item list-group-item-dark lesson_choice btn-dark shadow small-text">הטמעת שינויים בקבצים קיימים </button>
-                                            <button  class="list-group-item list-group-item-dark lesson_choice btn-dark shadow small-text">עבודה עם VSCODE</button>
+                                            <button id = "github_1"  class="list-group-item list-group-item-dark lesson_choice btn-dark shadow small-text"> פתיחה </button>
+                                            <button id = "github_2" class="list-group-item list-group-item-dark lesson_choice btn-dark shadow small-text"> יצירת תיקייה חדשה</button>
+                                            <button id = "github_3" class="list-group-item list-group-item-dark lesson_choice btn-dark shadow small-text">הטמעת שינויים בקבצים קיימים </button>
+                                            <button id = "github_4" class="list-group-item list-group-item-dark lesson_choice btn-dark shadow small-text">עבודה עם VSCODE</button>
                                           </div>
                                     </div>
                                     <button  class = " home_button" ><i class="fas fa-igloo "> ראשי </i></button>
                                 </div>
                             </div>
-                            <div data-role="splitter" data-split-mode="vertical" data-split-sizes="70, 30">
-                                <div class="panel1 padding_off" >
+
+                                <!-- <div class="panel1 padding_off" >
                                     <div id  = "panel1_content container-fluid full ">
                     
                                             <div class="tab">
@@ -161,9 +161,86 @@
 
                                         <div id = "panel1_content"></div>
                                     </div>
+                                </div> -->
+                                
+                                <div class="d-flex flex-justify-center flex-align-center">
+                                    <div id = "github1_content">
+                                        <p>GITHUB היא פלטפורמה חינמית שמאפשרת למתכנתים ואנשי פיתוח לנהל את הקוד עליו הם עובדים ולעבוד עליו בצורה מסודרת ונקייה.
+                                            <br>
+                                            <br>
+                                            המילה GITHUB  מגיעה מכלי בשם GIT שעוזר לנו לנהל גרסאות ויוצר לנו מבנה כמו של עץ כאשר הגזע הוא הפרויקט הראשי והענפים הם הגרסאות עליהם עובדים. כאשר רוצים לעדכן את ה"גזע" פשוט מצרפים אליו את הענף. זה קל ועושה סדר!
+                                            <br><br>
+                                            בעזרת גיטהאב תוכלו לאחסן את הקודים שלכם ברשת, לשתף אותם עם אחרים ואפילו לערוך קודים אחד של השני מרחוק.
+                                            <br><br>
+                                            לגיטהאב כמה יכולות מרכזיות שחשוב להכיר: 
+                                            ניהול גרסאות - ככה נוכל לשחזר את הקוד שלנו ולראות גרסאות קודמות שכתבנו.
+                                            פתיחת BRANCH (ענף) שעליו נבצע שינויים לפני שנעדכן את הקובץ הראשי.
+                                            מיזוג MERGE שמאפשר לנו להטמיע את השינויים שביצענו בענף לענף אחר או לענף הראשי.
+                                            <br><br>
+                                            מיום הקמתה גיטהאב הפכה להיות מאוד פופולרית בקרב מתכנתים והיום היא משמשת כסטנדרט להצגת יכולות התכנות ותיק העבודות שלנו. טיפ שלנו: שמרו הכל בגיטהאב! גם פרויקטים שנראים לכם קטנים ופשוטים הם למעשה הבסיס לתיק העבודות שלכם.
+                                            <br><br>
+                                            אז פתחו חשבון גיטהאב ובוא נתחיל!
+                                            <br><br>
+                                            <img src = "./assets/github_assets/github_enter.png" >
+                                        </p>
+                                    </div>
+                                    <div id = "github2_content">
+                                        <p>כשעובדים עם גיטהאב, יש כמה מושגים בסיסיים שחייבים להכיר:
+                                            <br>
+                                            REPOSITORY -  מאגר המידע שבו נמצאים תיקיות וקבצי הקוד. או בקיצור - REPO.
+                                            <br>
+                                            BRANCH - ענף עבודה. יש ענף ראשי ויש ענפי משנה שעליהם עובדים על גרסאות שונות לפני שמתחייבים לענף הראשי.
+                                            <br>
+                                            COMMIT - התחייבות, שמירה של העותק בנק' הזמן הנוכחית לענף הרצוי.
+                                            <br>
+                                            REQUEST - בקשה. 
+                                            <br>
+                                            MERGE - איחוד. כאשר נרצה לאחד בין קטעי הקוד שעבדנו עליהם לענף הרצוי.
+                                            <br>
+                                            FORK - למזלג פרויקט של מישהו אחרי אליכם ולעבוד עליו אצלכם.
+                                            <br><br>
+                                            כעת אחרי שפתחתם חשבון - פיתחו REPOSITORY חדש והתחילו לעבוד!
+                                            <br><br><img src = "./assets/github_assets/newrepository.png" >
+                                            <br><br>
+                                            קראו לתיקייה STARTUPISTEAM_FIRST_REPOSITORY והכניסו הסבר קצר על מטרת האתר שאתם בונים כנהוג.
+                                            <br>
+                                            כעת העלו לתיקייה קובץ HTML כלשהו לבחירתכם בעזרת ADD FILE --> UPLOAD.
+                                            <br><br>
+                                            טיפ חשוב: שימו לב כדי להעלות את הקובץ לתוך תיקייה בגיטהאב יש להגדיר העלאת קובץ חדש ובשם שלו להגדיר את התיקייה שבה הוא יהיה לדוגמה:
+                                            אם אנחנו רוצים קובץ חדש בשם INDEX בתוך תיקייה בשם CODE נרשום זאת כך בשם הקובץ: CODE/INDEX.
+                                        </p>
+                                    </div>
+                                    <div id = "github3_content">
+                                        <p>
+                                            כדי לשנות את הקבצים הקיימים קודם כל עליכם להגדיר את הענף שעליו אתם עובדים.
+                                            <br><br>
+                                            עדיף לא לעבוד על הMAIN מכיוון שזהו הענף הראשי ואנחנו לא רוצים לעשות בו שינויים משמעותיים מבלי שבדקנו אותם קודם ולכן נפתח ענף חדש ונקרא לו BRANCH1.
+                                            <br><br><img src = "./assets/github_assets/createbranch.png" >
+                                            <br><br>
+                                            הענף שפתחתם זהה לחלוטין לענף הMAIN, זאת המטרה שנוכל לעבוד על הפרויקט הקיים ובמידה ונהיה מרוצים מהשיניים נמזג ׁMERGE בין הענף והשינויים יוטמעו בענף הראשי.
+                                            <br><br>
+                                            לאחר שהענף נוצר נכנס לתוך הקובץ HTML שהעלינו ונבצע בו כמה שינויים כדי שלא יהיה זהה לMAIN.
+                                            לאחר שאנחנו מרוצים מהשינויים נלחץ על COMMIT CHANGES ונשמור את השינויים שביצענו. 
+                                            שימו לב לאפשרויות השמירה. חשוב לשמור על הענף הנכון.
+                                            כעת מופיעה לנו האפשרות לעשות COMPARE & PULL REQUEST לענף הראשי.
+                                            הכוונה היא להשוות בין הענפים וליצור בקשה משיכה מהענף הראשי לעדכון.
+                                            <br><br>
+                                            אחרי שראינו את השינויים ואנחנו מוכנים יש ללחוץ על CREATE REQUEST כדי לשלוח בקשה לאיחוד.
+                                            <br><br>
+                                            נבדוק בפאנל הPULL REQUESTS שלנו ונראה שהתקבלה בקשה חדשה.
+                                            <br><br><img src = "./assets/github_assets/new _pu.png" >
+                                            <br><br>
+                                            אם נרצה לאשר נלחץ על MERGE ושני הענפים יהיו שוב זהים.
+                                            <br><br>
+                                            <img src = "./assets/github_assets/mergeimage.png" >
+                                            <br><br>
+                                            זהו! כזה פשוט!
+                                        </p>
+                                    </div>
+                                    <div id = "github4_content">
+                                        <h1>here</h1>
+                                    </div>
                                 </div>
-                                <div class="d-flex flex-justify-center flex-align-center">Panel 2</div>
-                            </div>
                         </div>
                     </div>
                
