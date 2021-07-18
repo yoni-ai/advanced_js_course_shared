@@ -35,6 +35,10 @@ $(function(){
         $( "#node_content" ).hide( "slow");
         $( "#github_content" ).show( "slow");
         home_button();
+        $("#github1_content").show("slow");
+        $("#github2_content").hide();
+        $("#github3_content").hide();
+        $("#github4_content").hide();
       }
     });
 
@@ -59,15 +63,51 @@ $(function(){
       }
     });
 
-      $('.lesson_choice').on({
-        click: function(){
-          // $(this).addClass('active');
-        }
-      });
+    $("#github_1").on({
+      click: function(){
+        $("#github1_content").show("slow");
+        $("#github2_content").hide("slow");
+        $("#github3_content").hide("slow");
+        $("#github4_content").hide("slow");
+      }
+    });
 
-      $('.tablinks').click({
+    $("#github_2").on({
+      click: function(){
+        $("#github1_content").hide("slow");
+        $("#github2_content").show("slow");
+        $("#github3_content").hide("slow");
+        $("#github4_content").hide("slow");
+      }
+    });
 
-      });
+    $("#github_3").on({
+      click: function(){
+        $("#github1_content").hide("slow");
+        $("#github2_content").hide("slow");
+        $("#github3_content").show("slow");
+        $("#github4_content").hide("slow");
+      }
+    });
+
+    $("#github_4").on({
+      click: function(){
+        $("#github1_content").hide("slow");
+        $("#github2_content").hide("slow");
+        $("#github3_content").hide("slow");
+        $("#github4_content").show("slow");
+      }
+    });
+
+      // $('.lesson_choice').on({
+      //   click: function(){
+      //     // $(this).addClass('active');
+      //   }
+      // });
+
+      // $('.tablinks').click({
+
+      // });
 
 
 
