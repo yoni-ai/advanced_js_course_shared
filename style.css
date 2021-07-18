@@ -233,3 +233,60 @@ body {
       
   }
 
+/*github lessond content on panel 2 design*/
+#github1_content{
+    overflow-y: scroll;
+    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
+    box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0);
+    background-color: #626262;
+    margin: 20px;
+    padding: 20px;
+    height: 95%;
+    width: 100%;
+}
+#github1_content img {
+    width: 95%;
+    height: auto;
+}
+
+#github2_content{
+    overflow-y: scroll;
+    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
+    box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0);
+    background-color: #626262;
+    margin: 20px;
+    padding: 20px;
+    height: 95%;
+    width: 100%;
+}
+#github2_content img {
+    width: 95%;
+    height: auto;
+}
+
+#github3_content{
+    overflow-y: scroll;
+    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
+    box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0);
+    background-color: #626262;
+    margin: 20px;
+    padding: 20px;
+    height: 95%;
+    width: 100%;
+}
+
+#github3_content img {
+    width: 95%;
+    height: auto;
+}
+
+#github4_content{
+    overflow-y: scroll;
+    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
+    box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0);
+    background-color: #626262;
+    margin: 20px;
+    padding: 20px;
+    height: 95%;
+    width: 100%;
+}
