@@ -1,8 +1,4 @@
 
-
-
-
-
 /* --------------------------------------------bootstrap version---------------------------------------- */
 /* fonts from goole fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
@@ -292,6 +288,57 @@ body {
 }
 
 #github4_content img {
+    width: 95%;
+    height: auto;
+}
+
+
+/*bootstrap content design*/
+
+#bootstrap1_content{
+    overflow-y: scroll;
+    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
+    box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0);
+    background-color: #626262;
+    margin: 5px;
+    padding: 20px;
+    height: 95%;
+    width: 100%;
+}
+
+#bootstrap1_content img {
+    width: 95%;
+    height: auto;
+}
+
+#bootstrap2_content{
+    overflow-y: scroll;
+    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
+    box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0);
+    background-color: #626262;
+    margin: 5px;
+    padding: 20px;
+    height: 95%;
+    width: 100%;
+}
+
+#bootstrap2_content img {
+    width: 95%;
+    height: auto;
+}
+
+#bootstrap3_content{
+    overflow-y: scroll;
+    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
+    box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0);
+    background-color: #626262;
+    margin: 5px;
+    padding: 20px;
+    height: 95%;
+    width: 100%;
+}
+
+#bootstrap3_content img {
     width: 95%;
     height: auto;
 }
