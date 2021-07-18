@@ -290,3 +290,8 @@ body {
     height: 95%;
     width: 100%;
 }
+
+#github4_content img {
+    width: 95%;
+    height: auto;
+}
