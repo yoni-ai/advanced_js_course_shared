@@ -25,9 +25,6 @@ $(function(){
     }); 
   }
 
-  
-
-
     $("#github_enter").on({
       click: function(){
         $( "#home_content" ).hide( "slow");
