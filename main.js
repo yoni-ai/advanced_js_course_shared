@@ -27,15 +27,15 @@ $(function(){
 
     $("#github_enter").on({
       click: function(){
-        $( "#home_content" ).hide( "slow");
-        $( "#bootstrap_content" ).hide( "slow");
-        $( "#node_content" ).hide( "slow");
-        $( "#github_content" ).show( "slow");
+        $( "#home_content" ).hide("slow");
+        $( "#bootstrap_content" ).hide("slow");
+        $( "#node_content" ).hide("slow");
+        $( "#github_content" ).show("slow");
         home_button();
         $("#github1_content").show("slow");
-        $("#github2_content").hide();
-        $("#github3_content").hide();
-        $("#github4_content").hide();
+        $("#github2_content").hide("fast");
+        $("#github3_content").hide("fast");
+        $("#github4_content").hide("fast");
       }
     });
 
@@ -54,30 +54,34 @@ $(function(){
 
     $("#node_enter").on({
       click: function(){
-        $( "#github_content" ).hide( "slow");
-        $( "#home_content" ).hide( "slow");
-        $( "#bootstrap_content" ).hide( "slow");
-        $( "#node_content" ).show( "slow");
+        $("#github_content").hide("slow");
+        $("#home_content" ).hide("slow");
+        $("#bootstrap_content").hide("slow");
+        $("#node_content").show("slow");
         home_button();
+        $("#node2_content").hide("slow");
+        $("#node3_content").hide("slow");
+        $("#node4_content").hide("slow");
+        $("#node1_content").show("slow");
  
       }
     });
 
     $("#github_1").on({
       click: function(){
+        $("#github2_content").hide("fast");
+        $("#github3_content").hide("fast");
+        $("#github4_content").hide("fast");
         $("#github1_content").show("slow");
-        $("#github2_content").hide("slow");
-        $("#github3_content").hide("slow");
-        $("#github4_content").hide("slow");
       }
     });
 
     $("#github_2").on({
       click: function(){
         $("#github1_content").hide("slow");
-        $("#github2_content").show("slow");
         $("#github3_content").hide("slow");
         $("#github4_content").hide("slow");
+        $("#github2_content").show("slow");
       }
     });
 
@@ -85,8 +89,8 @@ $(function(){
       click: function(){
         $("#github1_content").hide("slow");
         $("#github2_content").hide("slow");
-        $("#github3_content").show("slow");
         $("#github4_content").hide("slow");
+        $("#github3_content").show("slow");
       }
     });
 
@@ -101,17 +105,17 @@ $(function(){
 
     $("#bootstrap_1").on({
       click: function(){
-        $("#bootstrap1_content").show("slow");
         $("#bootstrap2_content").hide("slow");
         $("#bootstrap3_content").hide("slow");
+        $("#bootstrap1_content").show("slow");
       }
     });
 
     $("#bootstrap_2").on({
       click: function(){
         $("#bootstrap1_content").hide("slow");
-        $("#bootstrap2_content").show("slow");
         $("#bootstrap3_content").hide("slow");
+        $("#bootstrap2_content").show("slow");
       }
     });
 
@@ -122,6 +126,43 @@ $(function(){
         $("#bootstrap3_content").show("slow");
       }
     });
+
+    $("#node_1").on({
+      click: function(){
+        $("#node2_content").hide("fast");
+        $("#node3_content").hide("fast");
+        $("#node4_content").hide("fast");
+        $("#node1_content").show("slow");
+      }
+    });
+
+    $("#node_2").on({
+      click: function(){
+        $("#node1_content").hide("fast");
+        $("#node3_content").hide("fast");
+        $("#node4_content").hide("fast");
+        $("#node2_content").show("slow");
+      }
+    });
+
+    $("#node_3").on({
+      click: function(){
+        $("#node2_content").hide("fast");
+        $("#node1_content").hide("fast");
+        $("#node4_content").hide("fast");
+        $("#node3_content").show("slow");
+      }
+    });
+
+    $("#node_4").on({
+      click: function(){
+        $("#node2_content").hide("fast");
+        $("#node3_content").hide("fast");
+        $("#node1_content").hide("fast");
+        $("#node4_content").show("slow");
+      }
+    });
+
 
 
 
