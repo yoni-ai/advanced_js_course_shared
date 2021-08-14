@@ -52,20 +52,20 @@ $(function(){
       }
     });
 
-    $("#node_enter").on({
-      click: function(){
-        $("#github_content").hide("slow");
-        $("#home_content" ).hide("slow");
-        $("#bootstrap_content").hide("slow");
-        $("#node_content").show("slow");
-        home_button();
-        $("#node2_content").hide("slow");
-        $("#node3_content").hide("slow");
-        $("#node4_content").hide("slow");
-        $("#node1_content").show("slow");
+//     $("#node_enter").on({
+//       click: function(){
+//         $("#github_content").hide("slow");
+//         $("#home_content" ).hide("slow");
+//         $("#bootstrap_content").hide("slow");
+//         $("#node_content").show("slow");
+//         home_button();
+//         $("#node2_content").hide("slow");
+//         $("#node3_content").hide("slow");
+//         $("#node4_content").hide("slow");
+//         $("#node1_content").show("slow");
  
-      }
-    });
+//       }
+//     });
 
     $("#github_1").on({
       click: function(){
