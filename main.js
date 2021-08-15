@@ -62,6 +62,8 @@ $(function(){
         $("#node2_content").hide("slow");
         $("#node3_content").hide("slow");
         $("#node4_content").hide("slow");
+        $("#node5_content").hide("slow");
+        $("#node6_content").hide("slow");
         $("#node1_content").show("slow");
  
       }
@@ -132,6 +134,8 @@ $(function(){
         $("#node2_content").hide("fast");
         $("#node3_content").hide("fast");
         $("#node4_content").hide("fast");
+        $("#node5_content").hide("fast");
+        $("#node6_content").hide("fast");
         $("#node1_content").show("slow");
       }
     });
@@ -141,6 +145,8 @@ $(function(){
         $("#node1_content").hide("fast");
         $("#node3_content").hide("fast");
         $("#node4_content").hide("fast");
+        $("#node5_content").hide("fast");
+        $("#node6_content").hide("fast");
         $("#node2_content").show("slow");
       }
     });
@@ -150,6 +156,8 @@ $(function(){
         $("#node2_content").hide("fast");
         $("#node1_content").hide("fast");
         $("#node4_content").hide("fast");
+        $("#node5_content").hide("fast");
+        $("#node6_content").hide("fast");
         $("#node3_content").show("slow");
       }
     });
@@ -159,7 +167,31 @@ $(function(){
         $("#node2_content").hide("fast");
         $("#node3_content").hide("fast");
         $("#node1_content").hide("fast");
+        $("#node5_content").hide("fast");
+        $("#node6_content").hide("fast");
         $("#node4_content").show("slow");
+      }
+    });
+
+    $("#node_5").on({
+      click: function(){
+        $("#node2_content").hide("fast");
+        $("#node3_content").hide("fast");
+        $("#node1_content").hide("fast");
+        $("#node4_content").hide("fast");
+        $("#node6_content").hide("fast");
+        $("#node5_content").show("slow");
+      }
+    });
+
+    $("#node_6").on({
+      click: function(){
+        $("#node2_content").hide("fast");
+        $("#node3_content").hide("fast");
+        $("#node1_content").hide("fast");
+        $("#node4_content").hide("fast");
+        $("#node5_content").hide("fast");
+        $("#node6_content").show("slow");
       }
     });
 
