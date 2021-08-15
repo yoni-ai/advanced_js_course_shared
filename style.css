@@ -60,16 +60,12 @@ body {
 }
 
 #logo {
-    background-image: url("/assets/MT_logo_white.png");
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
     position: absolute;
     bottom: 5%;
     left: 5%;
-    width: 40vmin;
-    height: 20vmin;
-    z-index: 1001;
+    width: 41.8vmin;
+    height: 21vmin;
+    z-index: 10;
 }
 
 /*right entry screen side*/
