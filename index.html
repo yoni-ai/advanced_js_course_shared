@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html>    
+<head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
@@ -9,8 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="/main.js"></script>
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./prism/prism.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>startupisteam course advanced</title>
+</head>
 <body>
 
     <div class=" container-fluid padding_off">
@@ -41,14 +44,14 @@
             
             <div id = "left-half" class = "col-lg-9 col-sm-9 padding_off ">
                 <!-- home content ----------------------------------------------- -->
-                    <div id = "home_content" class = "container full">
+                    <div id = "home_content" class = "container-fluid full">
                         <div class = "cover padding_off margin_off">
                             <div id= "logo" class = "padding_off margin_off">
                             </div>
                         </div>
                     </div>
                 <!-- github content ----------------------------------------------- -->
-                    <div id = "github_content" class = "container full content_design">
+                    <div id = "github_content" class = "container-fluid full content_design">
                         <div data-role="splitter" class="h-100" data-split-sizes="20, 80" data-min-sizes="200px , 40px">
                             <div class="d-flex flex-justify-center flex-align-center">
                                 <div class = "row padding_off margin_off" >
@@ -171,7 +174,7 @@
                     </div>
                
                 <!-- bootstrap content ----------------------------------------------- -->
-                    <div id = "bootstrap_content" class = "container full content_design">
+                    <div id = "bootstrap_content" class = "container-fluid full content_design">
                         <div data-role="splitter" class="h-100" data-split-sizes="20, 80" data-min-sizes="180px , 500px">
                             <div class="d-flex flex-justify-center flex-align-center"> 
                                 <div class = "row padding_off margin_off" >
@@ -256,7 +259,7 @@
                     </div>
                 </div> 
             <!-- node content ----------------------------------------------- -->
-             <div id = "node_content" class = "container full content_design">
+             <div id = "node_content" class = "container-fluid full content_design">
                 <div data-role="splitter" class="h-100" data-split-sizes="20, 80" data-min-sizes="200px , 40px">
                     <div class="d-flex flex-justify-center flex-align-center">
                         <div class = "row padding_off margin_off" >
@@ -279,6 +282,23 @@
                             <div id = "node1_content" class = "content_box">
                                 <p>1
                                 </p>
+                                    <pre>
+                                        <code class = "language-javascript">
+                                            function openCity(evt, shiurName) {
+                                                var i, tabcontent, tablinks;
+                                                tabcontent = document.getElementsByClassName("tabcontent");
+                                                for (i = 0; i < tabcontent.length; i++) {
+                                                  tabcontent[i].style.display = "none";
+                                                }
+                                                tablinks = document.getElementsByClassName("tablinks");
+                                                for (i = 0; i < tablinks.length; i++) {
+                                                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+                                                }
+                                                document.getElementById(shiurName).style.display = "block";
+                                                evt.currentTarget.className += " active";
+                                              }
+                                        </code>
+                                    </pre>
                             </div>
                             <div id = "node2_content" class = "content_box">
                                 <p>2
@@ -300,6 +320,7 @@
     </div>
 
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    <script src="./prism/prism.js"></script>
     <script>
         function openCity(evt, shiurName) {
           var i, tabcontent, tablinks;
