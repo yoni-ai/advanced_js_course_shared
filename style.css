@@ -60,15 +60,15 @@ body {
 }
 
 #logo {
-    background-image: url("/assets/MT_logo.png");
+    background-image: url("/assets/MT_logo_white.png");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
     position: absolute;
-    top: 65%;
-    right: 60%;
-    width: 60vmin;
-    height: 30vmin;
+    bottom: 5%;
+    left: 5%;
+    width: 40vmin;
+    height: 20vmin;
     z-index: 1001;
 }
 
@@ -90,10 +90,18 @@ body {
     line-height: 1.5;
 }
 
-#header{
+.header{
+    padding-top: 20px;
     color: black;
     font-size: 1.5em;
+    font-weight: 700;
+    font-family:  Helvetica, sans-serif ;
 }
+
+/* #header-logo-image{
+    width: 20vmin;
+    height: 10vmin;
+} */
 
 
 
