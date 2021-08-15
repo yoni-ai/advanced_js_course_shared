@@ -49,7 +49,7 @@ body {
 }
 
 .cover {
-    background-image: url("assets/code-img.jpg");
+    background-image: url("/assets/code-img.jpg");
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
