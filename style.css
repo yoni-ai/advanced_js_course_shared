@@ -1,6 +1,7 @@
 
 /* --------------------------------------------bootstrap version---------------------------------------- */
 /* fonts from goole fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 
@@ -153,7 +154,7 @@ body {
     background-color: rgb(73, 73, 73); 
     border: none; /* Remove borders */
     color: white; /* White text */
-    padding: o; /* Some padding */
+    padding: 0; /* Some padding */
     font-size: 16px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
     margin-top: 10%;
@@ -172,63 +173,13 @@ body {
 
 .lesson_choice{
     color: rgb(49, 49, 49);
+    height: 8vh;
+    font-size: 2.5vh;
+    font-family: 'Alef', sans-serif;
+    font-weight: 600;
 }
 
-
-/*tabs css*/
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
-    background-color: inherit;
-    float: right;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-    width: 33.3%;
-    border-top: 0.2px solid rgb(255, 255, 255);
-    border-right: 0.2px solid rgb(255, 255, 255);
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    height: 100%;
-  }
-
-  .tabs_content{
-      height: 100%;
-      width:100%;
-      background-color: rgb(27, 27, 27);
-      margin: 0;
-      border: solid #000000 0; 
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3) inset; 
-      border-radius: 5px;
-      padding: 5%;
-      
-  }
-
-
+/*lessons content box*/
   .content_box{
     overflow-y: scroll;
     -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
@@ -245,116 +196,14 @@ body {
     height: auto;
   }
 
-/*github lessond content on panel 2 design*/
-/* #github1_content{
-    overflow-y: scroll;
-    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
-    box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0);
-    background-color: #626262;
-    margin: 20px;
-    padding: 20px;
-    height: 95%;
-    width: 100%;
-}
-#github1_content img {
-    width: 95%;
-    height: auto;
-}
+  #node_asset1{
+      width: auto;
+      height: 60vh;
+      margin-right: 8vw;
+  }
 
-#github2_content{
-    overflow-y: scroll;
-    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
-    box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0);
-    background-color: #626262;
-    margin: 20px;
-    padding: 20px;
-    height: 95%;
-    width: 100%;
+  #node_asset2{
+    width: auto;
+    height: 40vh;
+    margin-right: 8vw;
 }
-#github2_content img {
-    width: 95%;
-    height: auto;
-}
-
-#github3_content{
-    overflow-y: scroll;
-    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
-    box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0);
-    background-color: #626262;
-    margin: 20px;
-    padding: 20px;
-    height: 95%;
-    width: 100%;
-}
-
-#github3_content img {
-    width: 95%;
-    height: auto;
-}
-
-#github4_content{
-    overflow-y: scroll;
-    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
-    box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0);
-    background-color: #626262;
-    margin: 20px;
-    padding: 20px;
-    height: 95%;
-    width: 100%;
-}
-
-#github4_content img {
-    width: 95%;
-    height: auto;
-}
-
-
-/*bootstrap content design*/
-/* 
-#bootstrap1_content{
-    overflow-y: scroll;
-    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
-    box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0);
-    background-color: #626262;
-    margin: 5px;
-    padding: 20px;
-    height: 95%;
-    width: 100%;
-}
-
-#bootstrap1_content img {
-    width: 95%;
-    height: auto;
-}
-
-#bootstrap2_content{
-    overflow-y: scroll;
-    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
-    box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0);
-    background-color: #626262;
-    margin: 5px;
-    padding: 20px;
-    height: 95%;
-    width: 100%;
-}
-
-#bootstrap2_content img {
-    width: 95%;
-    height: auto;
-}
-
-#bootstrap3_content{
-    overflow-y: scroll;
-    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0); 
-    box-shadow: inset 4px 4px 15px 0px #000000, 25px 36px 11px 21px rgba(0,0,0,0);
-    background-color: #626262;
-    margin: 5px;
-    padding: 20px;
-    height: 95%;
-    width: 100%;
-}
-
-#bootstrap3_content img {
-    width: 95%;
-    height: auto;
-}  */
