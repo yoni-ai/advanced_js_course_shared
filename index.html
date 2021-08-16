@@ -40,10 +40,8 @@
                         <button type="button" class = "col-12  btn btn-light main_button shadow" id = "node_enter"><i class="fab fa-node-js"> Node +Express </i></button>
                     </div>
                 </div>
-
             </div>
-
-            
+          
             <div id = "left-half" class = "col-lg-9 col-sm-9 padding_off ">
                 <!-- home content ----------------------------------------------- -->
                     <div id = "home_content" class = "container-fluid full">
@@ -67,7 +65,7 @@
                                             <button id = "github_4" class="list-group-item list-group-item-dark lesson_choice btn-dark shadow small-text">עבודה עם VSCODE</button>
                                           </div>
                                     </div>
-                                    <button  class = " home_button" ><i class="fas fa-igloo "> ראשי </i></button>
+                                    <button  class = "home_button" ><i class="fas fa-igloo "> ראשי </i></button>
                                 </div>
                             </div>
                                 <div class="d-flex flex-justify-center flex-align-center">
@@ -270,6 +268,8 @@
                                     <h3 >
                                      בחרו נושא:
                                     </h3>
+                                    <button id = "node_intro"  class="list-group-item list-group-item-dark lesson_choice btn-dark shadow small-text"> הקדמה </button>
+                                    <button id = "node_0"  class="list-group-item list-group-item-dark lesson_choice btn-dark shadow small-text"> תחילת עבודה עם COMMAND </button>
                                     <button id = "node_1"  class="list-group-item list-group-item-dark lesson_choice btn-dark shadow small-text"> היכרות עם NPM והתקנת NODE </button>
                                     <button id = "node_2" class="list-group-item list-group-item-dark lesson_choice btn-dark shadow small-text">תחילת עבודה עם EXPRESS</button>
                                     <button id = "node_3" class="list-group-item list-group-item-dark lesson_choice btn-dark shadow small-text">בקשות GET</button>
@@ -283,6 +283,33 @@
                     </div>
 
                         <div class="d-flex flex-justify-center flex-align-center">
+                            <div id = "nodei_content" class = "content_box">
+                                <p>
+                                    לפני שנתחיל ללמוד על NODE נצטרך להבין את ההבדלים בין צד שרת לצד לקוח.
+                                    כאשר אנחנו מאחסנים קבצי צד לקוח (HTML, CSS, JS) עליהם להיות נגישים לכל מי שרוצה לגשת לאתר.
+                                    <br><br>
+                                    כדי שנעשה זאת נצטרך לשים את הקבצים על שרת שפועל 24 שעות וממתין לקבל בקשות מהאינטרנט.
+                                    השרתים יכולים להימצא בכל מקום בעולם והם בעצם מחשבים שמאחסנים הרבה קבצים בצורה מסודרת ומנגישים אותו למשתמשים.
+                                    <br><br>
+                                    <img src = "./assets/node_assets/Frontend-vs-Backend.png" id = "node_asset1" >
+                                    <br><br>
+                                    לכל שרת יש כתובת, בדיוק כמו הכתובת של הבית שלכם והכתובת של מחשבה טובה (שד' הרצל 124 , ירושלים).
+                                    אבל הכתובת של השרת לא נראית כמו כתובת רגילה, היא בנויה משילוב של מספרים שאנחנו מכירים כIP שזה ראשי תיבות של Internet Protocol.
+                                    <br><br>
+                                    כדי שלא נצטרך כל פעם שאנחנו רוצים לגשת לאתר מסוים לכתוב מלא מספרים - בשביל זה קיים הURL - Unifom Resource Locator שהוא הכתובת לאתר שלנו. ניתן לרכוש URL אצל חברות שונות ברחבי האינטרנט.
+                                    <br><br>
+                                    <img src = "./assets/node_assets/server_circle.png" id = "node_asset2" >
+                                    <br><br>
+                                    בשרת אנחנו גם מאחסנים את כל המידע של המשתמשים, כמו שמות, סיסמאות, תמונות ועוד מידע רלוונטי לפי התוכנה שנרצה לבנות.
+                                    <br><br>
+                                    אז בואו נתחיל!
+                                </p>
+                            </div>
+                            <div id = "node0_content" class = "content_box">
+                                <p>
+                                    0
+                                </p>
+                            </div>
                             <div id = "node1_content" class = "content_box">
                                 <p>1
                                 </p>
@@ -335,21 +362,5 @@
 
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
     <script src="./prism/prism.js"></script>
-    <script>
-        function openCity(evt, shiurName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(shiurName).style.display = "block";
-          evt.currentTarget.className += " active";
-        }
-        </script>
-        
 </body>
 </html> 
