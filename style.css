@@ -186,15 +186,21 @@ body {
     width: 95%;
     height: auto;
   }
-
   #node_asset1{
       width: auto;
       height: 60vh;
       margin-right: 8vw;
   }
-
   #node_asset2{
     width: auto;
     height: 40vh;
     margin-right: 8vw;
+}
+#node_asset3{
+    width: auto;
+    height: 15vh;
+}
+#node_asset4{
+    width: auto;
+    height: 5vh;
 }
