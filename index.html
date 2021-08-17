@@ -77,9 +77,9 @@
                                             <br><br>
                                             בעזרת גיטהאב תוכלו לאחסן את הקודים שלכם ברשת, לשתף אותם עם אחרים ואפילו לערוך קודים אחד של השני מרחוק.
                                             <br><br>
-                                            לגיטהאב כמה יכולות מרכזיות שחשוב להכיר: 
-                                            ניהול גרסאות - ככה נוכל לשחזר את הקוד שלנו ולראות גרסאות קודמות שכתבנו.
-                                            פתיחת BRANCH (ענף) שעליו נבצע שינויים לפני שנעדכן את הקובץ הראשי.
+                                            לגיטהאב כמה יכולות מרכזיות שחשוב להכיר:<br>
+                                            ניהול גרסאות - ככה נוכל לשחזר את הקוד שלנו ולראות גרסאות קודמות שכתבנו.<br>
+                                            פתיחת BRANCH (ענף) שעליו נבצע שינויים לפני שנעדכן את הקובץ הראשי.<br>
                                             מיזוג MERGE שמאפשר לנו להטמיע את השינויים שביצענו בענף לענף אחר או לענף הראשי.
                                             <br><br>
                                             מיום הקמתה גיטהאב הפכה להיות מאוד פופולרית בקרב מתכנתים והיום היא משמשת כסטנדרט להצגת יכולות התכנות ותיק העבודות שלנו. טיפ שלנו: שמרו הכל בגיטהאב! גם פרויקטים שנראים לכם קטנים ופשוטים הם למעשה הבסיס לתיק העבודות שלכם.
@@ -358,28 +358,45 @@
                                     <br><br>
                                     משימה: בדקו בטרמינל אצלכם במחשב את הגרסה של npm.<br>
                                     אחרי שהתקנתם node.js על המחשב הגיע הזמן לגשת לעבודה!
+                                    <br><br>
+                                    ניגש לעבודה:<br>
+                                    יוצרים תיקייה לפרויקט (דרך הטרמינל עם הפקודה mkdir).<br>
+                                    פותחים את התיקייה ב-vscode בעזרת הפקודה code .<br>
+                                    מגיעים לתיקייה עם ה-terminal ב-vscode ופותחים פרויקט חדש עם הפקודה:<br>
+                                    npm init --yes<br>
+                                    --yes מדלג על מילוי של כל מיני פרטים שאפשר גם להשלים אחר כך.<br>
+                                    כעת, נוצר לנו קובץ package.json ראשוני. נסתכל עליו ב- code (תכף נבין את התפקיד שלו).<br>
+                                    ניצור באותה תיקייה קובץ server.js ונכתוב בתוכו:<br>
+                                    <pre>
+                                        <code class = "language-javascript">
+                                            console.log("hello world");
+                                        </code>
+                                    </pre> <br>
+                                    עכשיו נפתח טרמינל (רצוי בתוך vs code) ונריץ בתוכו את הפקודה:
+                                    node server.js
                                 </p>
 
                             </div>
                             <div id = "node2_content" class = "content_box">
                                 <p>
-                                    <pre>
-                                        <code class = "language-javascript">
-                                            function openCity(evt, shiurName) {
-                                                var i, tabcontent, tablinks;
-                                                tabcontent = document.getElementsByClassName("tabcontent");
-                                                for (i = 0; i < tabcontent.length; i++) {
-                                                  tabcontent[i].style.display = "none";
-                                                }
-                                                tablinks = document.getElementsByClassName("tablinks");
-                                                for (i = 0; i < tablinks.length; i++) {
-                                                  tablinks[i].className = tablinks[i].className.replace(" active", "");
-                                                }
-                                                document.getElementById(shiurName).style.display = "block";
-                                                evt.currentTarget.className += " active";
-                                              }
-                                        </code>
-                                    </pre>
+                                    נחזור לטרמינל ונתקין בתיקייה שלנו אקספרס:<br>
+                                    נציץ קודם בדף של express ב- npm.<br>
+                                    <a href="https://www.npmjs.com/package/express">לקריאה על express באתר של npm</a>
+                                    
+                                    נתקין בעזרת הפקודות:<br>
+                                    npm install express<br>
+                                    (אפשר גם npm i express )<br>
+                                    מסתכלים על package.json מה נוסף לנו?<br>
+                                    מסתכלים על התיקייה - מה נוסף לנו?<br>
+                                    <h2>תיקיית node_modules</h2>
+                                    כל פעם שמוסיפים "חבילה" (package) לטובת הפרויקט שלנו בעזרת הפקודה npm install - במקרה שלנו הוספנו את express - קורים שני דברים:<br>
+                                    החבילה הזאת מופיעה בקובץ package.json תחת סעיף dependencies.<br>
+                                    המספר שמופיע ליד שם החבילה הוא הגרסא שאותה עדכנו. בכל פעם שמי שיצר את החבילה מעדכן אותה, מספר הגרסא גדל.<br><br>
+                                    החבילה עצמה מותקנת בתיקייה תחת תיקיית node_modules.<br>
+                                    אם נסתכל בתיקיית node_modules נראה שחוץ מתיקיית express, נוספו גם עוד הרבה תיקיות אחרות, של חבילות שחבילת express צריכה ומשתמשת בהן.<br>
+                                    אם נסתכל בתיקיית express, רואים שכמו בפרויקט החדש שיצרנו, גם ל express יש קובץ package.json שמפרט רשימה של dependencies שהפרויקט משתמש בהם.<br><br>
+                                    כעת נמחק את תיקיית  node_modules - כאשר רוצים להעלות פרויקט לגיטהב או לשלוח אותו אז לא נרצה להעמיס על התיקייה את כל התיקיות הנוספות. אז פשוט נמחק את התיקייה וכשנרצה להתקין אותה מחדש נריץ פשוט את הפקודה npm install (או בקיצור npm i).<br>
+                                    עכשיו npm תעבור על החבילות שמופיעות לנו ב dependencies בקובץ package.json (במקרה שלנו רק express) ותתקין אותן מחדש וגם את כל החבילות שהן בעצמן צריכות.
                                 </p>
                             </div>
                             <div id = "node3_content" class = "content_box">
